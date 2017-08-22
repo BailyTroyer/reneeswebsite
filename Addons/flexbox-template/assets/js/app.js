@@ -1,3 +1,5 @@
+window.alert(5 + 6);
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
