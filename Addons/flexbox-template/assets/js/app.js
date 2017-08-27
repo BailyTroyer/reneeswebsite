@@ -38,3 +38,12 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
+function Breads() {
+  document.getElementById('mega-title').innerHTML = "Breads.";
+}
+function Cookies() {
+  document.getElementById('mega-title').innerHTML = "Cookies.";
+}
+function Desserts() {
+  document.getElementById('mega-title').innerHTML = "Desserts.";
+}

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Landing Page Template With Flexbox</title>
+    <title>Renee's Bakery</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -14,26 +14,53 @@
 </head>
 
 <body>
-
-	<header>
-		<h2><a href="#">Website Logo</a></h2>
+  <!--added-->
+	<header class="nav-down">
+  <!--here-->
+		<h2><a href="#">Renee's Bakery</a></h2>
 		<nav>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Products</a></li>
 			<li><a href="#">About</a></li>
-			<li><a href="#">Contacts</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">Contact</a></li>
 		</nav>
 	</header>
 
 
 	<section class="hero">
-		<div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div>
-		<h1>Responsive Flexbox Template</h1>
-		<h3>A freebie by Tutorialzine.</h3>
-		<a href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" class="btn">Download it Here</a>
+		<div class="background-image" style="background-image: url(assets/img/bakery.jpg);"></div>
+		<h1>Your life just got breader.</h1>
+		<!--<h3>A freebie by Tutorialzine.</h3>-->
+		<a href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" class="btn">Download our menu</a>
 	</section>
 
+<!-- menu -->
 
+  <section class="menu">
+    <h1 id="mega-title">Breads.</h1>
+    <ul>
+      <li onclick="Breads()">Breads / </li>
+      <li onclick="Cookies()">Cookies / </li>
+      <li onclick="Desserts()">Desserts</li>
+    </ul>
+    <hr>
+    <div id="menu-img">
+
+      <ul class="grid">
+
+      <p style="background-image: url(assets/img/balloon.jpg);"></p>
+      <p>holder</p>
+      <p>holder</p>
+      <p>holder</p>
+      <p>holder</p>
+      <p>holder</p>
+      <p>holder</p>
+      <br>
+    </div>
+  </section>
+
+
+<!-- menu -->
 	<section class="our-work">
 		<h3 class="title">Some of our work</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
@@ -56,18 +83,18 @@
 		<ul class="grid">
 			<li>
 				<i class="fa fa-camera-retro"></i>
-				<h4>Photography</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+				<h4>Midnight</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</li>
 			<li>
 				<i class="fa fa-cubes"></i>
-				<h4>Web Development</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+				<h4>6 o'clock</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</li>
 			<li>
 				<i class="fa fa-newspaper-o"></i>
-				<h4>Content Editing</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+				<h4>6AM-5PM</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</li>
 		</div>
 	</section>
@@ -101,6 +128,7 @@
 	</section>
 
 	<footer>
+    <h1>Renee's bakery</h1>
 		<ul>
 			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
 			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
@@ -111,6 +139,8 @@
 
 	</footer>
 
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="assets/js/app.js"></script>
 
 
