@@ -1,6 +1,8 @@
 /*-------------
  	General
 -------------*/
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -26,13 +28,14 @@ a{
 
 a:hover{
 	opacity: 1;
+	border-color: #c2d8f9;
 }
 
 a.btn{
 	color: #fff;
 	border-radius: 4px;
+	border-style: solid;
 	text-transform: uppercase;
-	background-color: #2196F3;
 	font-weight: 800;
 	text-align: center;
 }
@@ -246,92 +249,126 @@ header nav li:last-child{
 /*--------------------
  	Menu Section
 ---------------------*/
+.nav-down {
+	color: white;
+	background-color: #87a8dd;
+	padding-bottom: 20px;
+}
+.nav-content {
+	color: white;
+	font-size: 18px;
+	padding-left: 100px;
+}
 
 .menu {
+	background-color: #e6ecf7;
 	margin: 0;
 	padding: 0;
 }
 .menu-top {
-	background-color: #94ed8e;
+	background-color: #c2d8f9;
 	width: 100vw;
-}
-.menu-nav li {
-	align-self: center;
+	padding-left: 15px;
 }
 .nav-container {
-	margin: 0;
-	padding: 0;
+	font-size: 20px;
+	position: relative;
+	align-self: center;
+	background-color: #c2d8f9;
 	width: 100vw;
-	align-content: center;
 	padding-bottom: 10px;
-	padding-left: 10px;
+	padding-top: 10px;
+	text-align: center;
 }
 .menu h1 {
 	font-size: 90px;
 	padding-top: 20px;
-	padding-bottom: 20px;
 }
-
 .menu li {
 	display: inline;
-}
-.menu p{
-	opacity: 1.0;
-
-	height: 30vh;
-	width: 55vh;
-	margin: 10px;
-	margin-top: 50px;
-	margin-bottom: 80px;
-	border: solid 1px blue;
-
-	background-size: fill;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-/*new shit*/
-.test img {
-	height: 30vh;
-	width: 55vh;
-	margin: 10px;
-	margin-top: 50px;
-	margin-bottom: 80px;
-	border: solid 1px blue;
-
+	cursor: pointer;
 }
 .inner {
 	opacity: 0;
 	transition: .5s ease;
-  background-color: red;
+  background-color: #728bb2;
+	height: 30vh;
+	width: 55vh;
 }
 .inner-text {
+  line-height: 90px;
+  text-align: center;
 	color: white;
-	position: absolute;
-  top: 50%;
-  left: 50%;
-	font-size: 20px;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
 }
 
-.menu p:hover{
-	opacity: 0.75;
+.grid-1:hover .inner {
+	opacity: 0.9;
 }
-
-.test .grid:hover .inner {
-	opacity: 0.75;
-}
-
 /*end new shit*/
 .menu hr {
-	margin: 0;
-	margin-top: 10px;
-	width: 100%;
+	margin: 0 auto;
+  width: 85%;
 	height: 1px;
-	background-color: black;
-	border: 0;
+	background-color: white;
 }
-.menu .grid:hover {
-	color: black;			//can change back to blue when hovering over whole menu
+.grid-1{
+	background-image: url('../img/balloon.jpg');
+	background-size: fill;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 30vh;
+	width: 55vh;
+	margin: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
+/*--------------------
+  Yelp Reivew Section
+---------------------*/
+
+.yelp-review {
+	margin-top: 10px;
+}
+.box-big-left {
+	border-style: solid;
+	height: 30vh;
+	width: 45vw;
+	margin-right: 50%;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color: blue;
+	float: left;
+	margin-bottom: 20px;
+}
+.box-small-left {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color: red;
+	float: right;
+}
+.box-big-right {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color: blue;
+	float: right;
+}
+.box-small-right {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color: red;
+	float: left;
+}
+
+
+
+
 
 
 
@@ -428,47 +465,6 @@ header nav li:last-child{
 
 
 
-/*--------------------
- 	Reviews Section
---------------------*/
-
-.reviews{
-	background-color: #fff;
-}
-
-.reviews .quote{
-	text-align: center;
-	width: 80%;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.reviews .author{
-    font-size: 18px;
-    margin-bottom: 50px;
-}
-
-.reviews .author:last-child{
-    margin-bottom: 0;
-}
-
-@media (max-width: 1000px){
-
-	.reviews .quote{
-		font-size: 20px;
-	}
-
-	.reviews .author{
-	    font-size: 16px;
-	}
-
-}
-
-
-
 /*---------------------
  	Contact Section
 ---------------------*/
@@ -542,6 +538,11 @@ footer ul li:first-child{
 
 footer ul li:last-child{
 	margin-right: 0;
+}
+
+footer h2 {
+	font-size: 15px;
+	left: 20px;
 }
 
 footer p{

@@ -47,3 +47,9 @@ function Cookies() {
 function Desserts() {
   document.getElementById('mega-title').innerHTML = "Desserts.";
 }
+
+for (i=0; i<10; i++) {
+  console.log(i);
+  $('.nav-container').addClass('menu-nav');
+}
+$('.nav-container').addClass('menu-nav'); 
